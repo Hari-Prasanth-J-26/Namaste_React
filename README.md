@@ -185,7 +185,66 @@ Tree shaking is a feature that removes unused code during the bundling process, 
 Tree shaking relies on ES modules (ESM) to determine which code can be safely removed.
 Bundlers like Webpack, Vite, and Parcel support tree shaking if the code is written in ES module syntax.
 
+# Key Differences Between Git and GitHub
 
+<table border="1">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Git</th>
+                <th>GitHub</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Type</td>
+                <td>Version Control System</td>
+                <td>Cloud-based Git repository hosting service</td>
+            </tr>
+            <tr>
+                <td>Primary Function</td>
+                <td>Tracks changes in code, manages versions</td>
+                <td>Hosts Git repositories, collaboration tools</td>
+            </tr>
+            <tr>
+                <td>Hosted Locally or Remotely</td>
+                <td>Runs on local machines</td>
+                <td>Hosts repositories on the cloud</td>
+            </tr>
+            <tr>
+                <td>Collaboration</td>
+                <td>Doesn't provide collaboration features on its own</td>
+                <td>Provides collaboration features like pull requests, issues, wikis</td>
+            </tr>
+            <tr>
+                <td>Web Interface</td>
+                <td>No web interface; command-line based</td>
+                <td>Provides a web interface for managing repos</td>
+            </tr>
+            <tr>
+                <td>Version Control</td>
+                <td>Provides version control functionality</td>
+                <td>Uses Git for version control but adds a remote repository and extra features</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>git commit, git branch, git push</td>
+                <td>GitHub repositories, pull requests, actions, issues</td>
+            </tr>
+        </tbody>
+    </table>
+    
+# JSX - It's not HTML inside JS. It's HTML-Like or XML-Like syntax.
 
+JSX (JavaScript XML) is a syntax extension for JavaScript commonly used with React to describe what the UI should look like. <b>JSX allows you to write HTML-like code within JavaScript</b>, making it easier to create and manage the structure of React components.
 
+-> Compiles to JavaScript: JSX is not valid JavaScript; it gets transpiled into plain JavaScript by tools like Babel before being executed in the browser.
 
+```html
+Transpilation Example:
+const element = <h1>Hello, World!</h1>;
+
+Compiles to:
+const element = React.createElement('h1', null, 'Hello, World!');
+```
+JSX transpiled before it reaches the JS -> (parcel, vite) -> Babel
