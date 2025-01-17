@@ -248,3 +248,23 @@ Compiles to:
 const element = React.createElement('h1', null, 'Hello, World!');
 ```
 JSX transpiled before it reaches the JS -> (parcel, vite) -> Babel
+
+-> In JSX, if we write a mulitple line then we should use brackets ( )
+
+-> In JSX, if we put anything inside { } in react Element, JSX will not blindly run it. It will sanitize and then run it.
+
+# React Component
+
+1. Class Based Component - old
+2. Functional Component - new
+
+# Functional Component
+
+A functional component in React is a JavaScript function that returns JSX (React elements) 
+
+```h
+const HeadingComponent = () => {
+    return <h1>Hello World!</h1>;
+};
+```
+
